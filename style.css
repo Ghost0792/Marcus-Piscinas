@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+ 
+
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+body{
+  height: 100vh;
+   background-color: hsl(222, 47.4%, 11.2%);
+}
+
+main{
+  display: flex;
+  flex-direction: column ;
+  
+  
+}
+
+section.sectionIntro{
+  height: 300px;
+  position: relative;
+  background: url('img/pexels-vlada-karpovich-7902914.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center ;
+  overflow: hidden;
+  font-family:Zilla Slab;
+  width: 100vw;
+  height:100%;
+}
+
+  /* #conteudo button{
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: hsl(240, 3.7%, 15.9%);
+  color: white;
+  box-shadow: 1px 2px 2px#00000069 ;
+  
+} */
+
+.botoes{
+  display: flex;
+  gap: 20px ;
+  flex-flow: row wrap;
+  justify-content:space-evenly;
+}
+
+header{
+  margin:-10px -10px 50px -10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  height:100px;
+  background: linear-gradient(135deg, hsl(217.7,57.9%,18.4%), hsl(201, 96.3%, 32.2%));
+  color: hsl(199, 88.7%, 48.4%);
+  box-shadow: 0px 1px 2px #0000007b;
+}
+
+h1{
+  text-shadow: 3px 3px 1px #0000007b ;
+}
+
+
+h2{
+  
+  padding: 10px ;
+  
+  background-color: #00000091;
+  text-shadow: 1px 1px 1px #0000007b;
+  color:#ffffff; 
+  font-weight: bolder;
+  font-size: 2em ;
+}
+
+h3{
+  color: hsl(199, 95.5%, 73.9%);
+  font-size: 1.5em ;
+  margin: 15px;
+  text-align: center ;
+}
+
+section.sectionIntro p{
+  color: white ;
+  font-weight: 600 ;
+  text-align: justify;
+  margin: 35px 0px;
+  background-color: #00000014;
+  font-size: 1.2em;
+line-height: 1.5em ;
+  
+}
+section.sectionIntro::before{
+  content:'';
+  position:absolute ;
+  inset: 0;
+  background: inherit;
+  filter: blur(1px);
+  transform:scale(1);
+  z-index: 1;
+  ;
+}
+
+div#conteudo{
+  position:relative;
+  z-index:2;
+  color: white;
+  background-color: #00000055;
+  height: 100%;
+  width: 100%;
+  padding: 10px ;
+  
+}
+
+
+section{
+  margin-bottom:150px ;
+}
+
+section#sectionServicos{
+  display: flex ;
+  flex-flow: column wrap ;
+  justify-content:center;
+  align-items: center ;
+  gap: 180px ;
+   background-color: hsl(222, 47.4%, 11.2%);
+}
+
+
+
+
+.servicos {
+  display: flex ;
+  flex-direction: column ;
+  align-items: center;
+  max-width:50%;
+  padding: 30px;
+  text-shadow: 2px 2px 3px #0000007d;
+  text-align: center ;
+  min-height: 33vh;
+  background-color: hsl(215, 25%, 20%);
+  border-radius: 30px;
+  
+  
+  /* box-shadow: 15px 15px 2px hsla(144,84.5%,0%,0.459); */
+  box-shadow: 
+    0 0 5px #00d4ff ,
+    0 0 10px #00d4ff,
+    0 0 20px #00d4ff;
+    animation: neonPulse 1.5s infinite alternate;
+
+} 
+
+@keyframes neonPulse {
+  from {
+    box-shadow:
+      0 0 4px #00d4ff,
+      0 0 8px #00d4ff,
+      0 0 16px #00d4ff;
+    opacity: 0.8;
+  }
+
+  to {
+    box-shadow:
+      0 0 8px #00d4ff,
+      0 0 16px #00d4ff,
+      0 0 32px #00d4ff;
+    opacity: 1;
+  }
+} 
+
+
+.servicos > p{
+  color: white ;
+  font-weight: bold;
+  font-family: Zilla Slab ;
+  font-size: 1.5em;
+  margin-top: 20%;
+}
+
+
+.servicos > img{
+  
+  width:50% ;
+  margin:20px;
+} 
+
+h2{
+  margin: 15px 0px;
+}
+a#zap{
+  width: 60%;
+  text-align: center ;
+  text-decoration: none;
+  background: linear-gradient(135deg, #0fbf5f, #0a8f47);
+  padding: 10px ;
+  font-size: 1.2em ;
+  text-shadow: 2px 2px 1px #00000099;
+  border-radius: 20px ;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+ #zap img{
+  width: 10%;
+}
+
+#sectionContato{
+  background-color: hsl(144,84.5%,0%);
+  margin: 0;
+  min-height: 100%;
+  width: 100vw;
+  padding:10px;padding-bottom:20px;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+  header{
+    height:160px;
+  }
+
+  header h1{
+    font-size: 3em;
+  }
+  
+  section.sectionIntro h2{
+    font-size: 3.3em;
+  }
+  
+  section.sectionIntro p {
+    font-size: 2.3em;
+  }
+  
+  .servicos > p{
+    font-size:2.8em;
+    
+  }
+}
+
+@media screen and (min-width:1025px){
+  
+  header{
+    height:220px;
+  }
+  
+  header h1{
+    font-size: 5em;
+    letter-spacing: 3px;
+  }
+  
+  section#sectionServicos{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    margin: auto;
+    gap: 100px;
+    font-size: 2.2em;
+    justify-items: center;
+  }
+  
+  
+  
+  div.servicos{
+    padding: 20px ;
+    max-width: 60%;
+  }
+  
+  h2{
+    font-size:4em;
+    
+  }
+  
+ section.sectionIntro p{
+   font-size: 3.2em;
+   margin-top: 40px;
+   padding: 10px;
+ }
+  
+  #sectionContato{
+    margin-top: 60px;
+  }
+  
+  #sectionContato a{
+    font-size:2.5em;
+    letter-spacing: 3px ;
+    width: 40%;
+  }
+  
+  div#conteudo{
+    height:800px
+  }
+  
+  a#zap img{
+    width: 5%;
+  }
+}
+
+ 
